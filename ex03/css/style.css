@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Oxygen|Roboto:100,400|Shadows+Into+Light+Two');
+* {
+    /* 
+    讓所有大小的計算以 border-box 為基礎
+    border 設定是往內計算，避免往外長大造成計算寬度的困難 
+    border: 100px solid pink;
+    */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Oxygen', sans-serif;
+}
+
+body,
+html {
+    /* 對內部的留白 */
+    padding: 0;
+    /* 對外部的留白 */
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.title {
+    color: #3d99f5;
+}
+
+.cv {
+    position: relative;
+    /* w800 */
+    width: 800px;
+    /* h1000
+    height: 1000px;
+    */
+    /* bgc + [tab]*/
+    background-color: #12788b;
+    /* 
+    margin [top] [left]
+    margin: 20px 40px;
+    */
+    /* 水平置中 */
+    margin: 0 auto;
+    z-index: 5;
+    /* y x 寬度 縮放 顏色*/
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 70);
+}
+
+
+/* note setting for Header */
+
+header {
+    background-color: #0a424d;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    letter-spacing: :8px;
+}
+
+.name {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.current-job-title {
+    margin: 0;
+}
+
+header,
+.intro,
+.experience-list,
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer {
+    background-color: #0a424d;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+footer * {
+    color: #dddddd;
+}
+
+
+/* note experience */
+
+.experience {
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name:before {
+    content: "WhoAmI? ";
+}
+
+html {
+    width: 100%;
+    position: relative;
+}
+
+html:after {
+    position: fixed;
+    content: "Contact Me";
+    height: 20px;
+    background-color: #838383;
+    top: 0;
+    right: 100;
+    z-index: 99;
+}
